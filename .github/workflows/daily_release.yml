@@ -20,7 +20,7 @@ jobs:
     - name: Release Next Project
       run: |
         # Define the order of release
-        PROJECTS=("mean_reversion" "fourier_transform" "fractal_analysis")
+        PROJECTS=("mean_reversion" "fourier_transform" "fractal_analysis" "heston_model" "efficient_frontier" "pairs_trading")
         
         for PROJECT in "${PROJECTS[@]}"; do
           VAULT_PATH="Quant-Projects/.vault/$PROJECT"

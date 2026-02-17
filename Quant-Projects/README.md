@@ -47,15 +47,6 @@ This repository is alive. A **GitHub Action** (`.github/workflows/daily_quant_up
 
 It is a self-updating journal of financial probability.
 
-## 🗝️ The Vault
-There are **3 hidden projects** stored in the cryptographic vault (`Quant-Projects/.vault`). 
-A separate automation (`.github/workflows/daily_release.yml`) is scheduled to decrypt and release one new project **every 3 days**.
-
-Stay tuned for:
-1.  **Mean Reversion**: Visualizing the elasticity of price.
-2.  **Fourier Analysis**: Decomposing market cycles into pure frequencies.
-3.  **Fractal Geometry**: Measuring the roughness of the time-series (Hurst Exponent).
-
 ## Tools of the Trade
 - `numpy`: The bedrock of computation.
 - `matplotlib` & `scipy`: For visualizing the unseen.
