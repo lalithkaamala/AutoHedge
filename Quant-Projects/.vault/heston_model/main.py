@@ -78,7 +78,7 @@ def animate_heston():
         # Rotate view for cinematic effect
         ax.view_init(elev=20, azim=frame/2)
         
-        current_step = frame
+        current_step = int(frame)
         if current_step > params['N']:
             current_step = params['N']
             

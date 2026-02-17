@@ -74,13 +74,17 @@ def animate_strategy(symbol):
             
         subset = data.iloc[:current_idx]
         
+        # Redraw
         line_price.set_data(subset.index, subset['Price'])
         line_mean.set_data(subset.index, subset['Mean'])
         line_upper.set_data(subset.index, subset['Upper'])
         line_lower.set_data(subset.index, subset['Lower'])
         
-        # Fill between is tricky in animation, clearing and redrawing is heavy but simplest for this demo
-        ax.collections.clear()
+        # Remove old fill
+        for collection in ax.collections:
+            collection.remove()
+            
+        # Add new fill
         ax.fill_between(subset.index, subset['Upper'], subset['Lower'], color='purple', alpha=0.15)
         
         return line_price, line_mean, line_upper, line_lower
