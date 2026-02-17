@@ -6,3 +6,5 @@ swarm-models
 fastapi 
 uvicorn 
 requests 
+langchain-community
+langchain-openai
