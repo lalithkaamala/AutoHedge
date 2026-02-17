@@ -33,7 +33,7 @@ Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of sw
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/The-Swarm-Corporation/AutoHedge.git
+   git clone https://github.com/lalithkaamala/AutoHedge.git
    cd AutoHedge
    ```
 
