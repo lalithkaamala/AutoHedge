@@ -2,6 +2,8 @@ import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import matplotlib
+matplotlib.use('Agg') # Headless backend for CI
 
 # Polymath Aesthetic
 plt.style.use('dark_background')
