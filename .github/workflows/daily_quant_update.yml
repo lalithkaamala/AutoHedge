@@ -32,13 +32,11 @@ jobs:
 
     - name: Run Monte Carlo Simulation
       run: |
-        cd Quant-Projects
-        python3 monte_carlo/main.py
+        python3 Quant-Projects/monte_carlo/main.py
       
     - name: Run Black-Scholes Visualization
       run: |
-        cd Quant-Projects
-        python3 option_pricing/main.py
+        python3 Quant-Projects/option_pricing/main.py
       
     - name: Commit and Push Results
       run: |

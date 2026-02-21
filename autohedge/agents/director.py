@@ -1,5 +1,4 @@
-from typing import List, Optional
-from loguru import logger
+from typing import List
 from swarms import Agent
 from tickr_agent.main import TickrAgent
 from autohedge.config import settings
