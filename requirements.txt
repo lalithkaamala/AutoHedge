@@ -8,14 +8,3 @@ uvicorn
 requests 
 langchain-community
 langchain-openai
-
-# Quant Dependencies
-numpy
-pandas
-yfinance
-matplotlib
-seaborn
-scipy
-statsmodels
-scikit-learn
-pillow
