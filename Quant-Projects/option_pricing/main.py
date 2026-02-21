@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
-from mpl_toolkits.mplot3d import Axes3D
 
 # Apply "Polymath" dark aesthetic
 plt.style.use('dark_background')
@@ -118,7 +117,7 @@ def animate_greeks_cinema():
     fig.suptitle('The Geometry of Risk: Gamma Surface', fontsize=24, color='white', fontweight='bold', y=0.92)
     
     ax = fig.add_subplot(111, projection='3d')
-    surf = ax.plot_surface(S, T, gamma, cmap='inferno', edgecolor='none', alpha=0.9)
+    ax.plot_surface(S, T, gamma, cmap='inferno', edgecolor='none', alpha=0.9)
     
     ax.set_xlabel('Spot Price ($)', fontsize=12, labelpad=10)
     ax.set_ylabel('Time to Expiry (Years)', fontsize=12, labelpad=10)

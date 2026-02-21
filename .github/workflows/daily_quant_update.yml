@@ -25,6 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install pillow
         pip install -r Quant-Projects/requirements.txt
 
     - name: Run Monte Carlo Simulation
@@ -44,4 +45,5 @@ jobs:
         git add Quant-Projects/monte_carlo/*.png Quant-Projects/monte_carlo/*.gif
         git add Quant-Projects/option_pricing/*.png Quant-Projects/option_pricing/*.gif
         git commit -m "📈 Daily Quant Update: $(date +'%Y-%m-%d')" || exit 0
+        git pull --rebase origin main
         git push

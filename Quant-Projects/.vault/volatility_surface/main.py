@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-from mpl_toolkits.mplot3d import Axes3D
 
 # Polymath Aesthetic
 plt.style.use('dark_background')
@@ -40,7 +39,7 @@ def animate_volatility_surface():
     ax.set_zlabel('Implied Volatility (%)', color='white')
     
     # Initial plot
-    surf = ax.plot_surface(S, T, np.zeros_like(S), cmap='magma', edgecolor='none', alpha=0.8)
+    ax.plot_surface(S, T, np.zeros_like(S), cmap='magma', edgecolor='none', alpha=0.8)
     
     def update(frame):
         ax.clear()

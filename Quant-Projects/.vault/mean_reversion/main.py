@@ -1,6 +1,5 @@
 import yfinance as yf
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
@@ -51,7 +50,7 @@ def animate_strategy(symbol):
     line_mean, = ax.plot([], [], color='white', linestyle='--', alpha=0.5, label='Moving Average')
     line_upper, = ax.plot([], [], color='red', alpha=0.3)
     line_lower, = ax.plot([], [], color='green', alpha=0.3)
-    fill = ax.fill_between([], [], [], color='gray', alpha=0.1)
+    ax.fill_between([], [], [], color='gray', alpha=0.1)
 
     ax.legend(loc='upper left', frameon=False, labelcolor='white')
     

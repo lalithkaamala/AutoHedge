@@ -70,7 +70,7 @@ def visualize_fractal(symbol):
     
     # Narrative
     avg_hurst = np.mean(hurst_series)
-    print(f"\n📜 FRACTAL INSIGHT")
+    print("\n📜 FRACTAL INSIGHT")
     print(f"Average Hurst: {avg_hurst:.4f}")
     if avg_hurst > 0.5:
         print("Verdict: Market shows persistent trends (Memory).")

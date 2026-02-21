@@ -41,6 +41,7 @@ jobs:
             # Commit and Push
             git add "$PUBLIC_PATH"
             git commit -m "✨ New Quant Release: $PROJECT (Polymath Edition)"
+            git pull --rebase origin main
             git push
             
             echo "✅ Released $PROJECT"

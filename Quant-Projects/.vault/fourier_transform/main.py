@@ -45,7 +45,7 @@ def animate_fourier(symbol):
     ax2.set_title('Dominant Frequencies', fontsize=14, color='white')
     freqs = np.fft.fftfreq(N)
     magnitudes = np.abs(fft_coeffs)
-    stem_container = ax2.stem(freqs[:N//2], magnitudes[:N//2], linefmt='lime', markerfmt='go', basefmt=" ")
+    ax2.stem(freqs[:N//2], magnitudes[:N//2], linefmt='lime', markerfmt='go', basefmt=" ")
     
     def update(frame):
         # Use top 'frame' components
