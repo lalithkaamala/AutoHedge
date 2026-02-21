@@ -8,7 +8,7 @@ from autohedge.main import AutoHedge
 
 def test_init():
     try:
-        hedge = AutoHedge(stocks=["AAPL"], output_dir="tests/outputs")
+        AutoHedge(stocks=["AAPL"], output_dir="tests/outputs")
         print("AutoHedge initialized successfully.")
     except Exception as e:
         print(f"Initialization failed: {e}")

@@ -4,7 +4,6 @@ from pathlib import Path
 from loguru import logger
 from swarms import Conversation
 
-from autohedge.config import settings
 from autohedge.utils import setup_logging, AutoHedgeOutputMain
 from autohedge.agents import (
     TradingDirector,

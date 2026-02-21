@@ -12,6 +12,8 @@ permissions:
 jobs:
   run-simulations:
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: "dummy_key"
     
     steps:
     - name: Checkout code

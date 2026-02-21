@@ -7,10 +7,10 @@ on:
     branches: [ main ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: "dummy_key"
 
     steps:
     - uses: actions/checkout@v4

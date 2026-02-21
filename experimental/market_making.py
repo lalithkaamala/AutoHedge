@@ -161,12 +161,6 @@ class MarketMaker:
         Returns:
             float: Order size in base asset
         """
-        total_value = (
-            self.current_inventory["base"]
-            * self.market_data.last_price
-            + self.current_inventory["quote"]
-        )
-
         order_size = (
             self.config.total_capital
             * self.config.order_size_percentage
