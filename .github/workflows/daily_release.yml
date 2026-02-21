@@ -44,15 +44,6 @@ jobs:
             git push
             
             echo "✅ Released $PROJECT"
-            
-            # --- NEURAL LINK: Broadcast to External Automation (Zapier/Make/Discord) ---
-            if [ ! -z "${{ secrets.WEBHOOK_URL }}" ]; then
-              echo "📡 Broadcasting update to Neural Link..."
-              curl -X POST -H "Content-Type: application/json" \
-                   -d "{\"project\": \"$PROJECT\", \"status\": \"released\", \"message\": \"New Quant Project Released: $PROJECT\"}" \
-                   ${{ secrets.WEBHOOK_URL }}
-            fi
-            
             exit 0 # Exit after releasing ONE project
           fi
         done
