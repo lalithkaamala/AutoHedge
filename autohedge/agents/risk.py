@@ -1,4 +1,3 @@
-from loguru import logger
 from swarms import Agent
 from autohedge.config import settings
 

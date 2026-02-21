@@ -1,4 +1,5 @@
 from typing import List
+from loguru import logger
 from swarms import Agent
 from tickr_agent.main import TickrAgent
 from autohedge.config import settings

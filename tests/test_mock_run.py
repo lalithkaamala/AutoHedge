@@ -46,4 +46,5 @@ def test_mock_run(mock_dir_agent, mock_quant_agent, mock_risk_agent, mock_exec_a
         raise
 
 if __name__ == "__main__":
-    test_mock_run()
+    # Call via pytest/unittest or mock manually if needed
+    print("Run via: pytest tests/test_mock_run.py")

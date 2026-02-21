@@ -4,6 +4,10 @@ import os
 # Add project root to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+# Set dummy keys for initialization tests
+os.environ["OPENAI_API_KEY"] = "dummy_key"
+os.environ["GROQ_API_KEY"] = "dummy_key"
+
 from autohedge.main import AutoHedge
 
 def test_init():
